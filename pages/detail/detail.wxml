@@ -1,0 +1,15 @@
+<view class="container">
+  <view class="article">
+    <view class="header">
+      <text class="title">{{title}}</text>
+      <view class="meta">
+        <text class="source">{{source}}</text>
+        <text class="read-count">{{readCount}}阅读</text>
+        <text class="time">{{time}}</text>
+      </view>
+    </view>
+    <view class="content">
+      <rich-text nodes="{{content}}"></rich-text>
+    </view>
+  </view>
+</view>

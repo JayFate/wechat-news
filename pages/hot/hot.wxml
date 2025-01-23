@@ -1,0 +1,18 @@
+<view class="container">
+  <view class="hot-list">
+    <view class="news-item" wx:for="{{hotList}}" wx:key="id" bindtap="goToDetail" data-id="{{item.id}}">
+      <view class="news-content">
+        <view class="news-info">
+          <view class="tag" wx:if="{{item.tag}}">{{item.tag}}</view>
+          <view class="title">{{item.title}}</view>
+          <view class="meta">
+            <text class="source">{{item.source}}</text>
+            <text class="read-count">{{item.readCount}}阅读</text>
+            <text class="time">{{item.time}}</text>
+          </view>
+        </view>
+        <image class="news-image" mode="aspectFill" src="{{item.image}}" lazy-load></image>
+      </view>
+    </view>
+  </view>
+</view>
